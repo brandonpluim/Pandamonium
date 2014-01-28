@@ -1,21 +1,16 @@
 //
-//  PNDAAssignmentsViewModel.m
+//  PNDATodoViewModel.m
 //  Pandamonium
 //
 //  Created by derrick on 1/28/14.
 //  Copyright (c) 2014 Instructure. All rights reserved.
 //
 
-#import "PNDAAssignmentsViewModel.h"
+#import "PNDATodoViewModel.h"
 #import "PNDACellViewModel.h"
 
-@interface PNDAAssignmentsViewModel ()
-@property (nonatomic) CKIClient *client;
-@end
-
-@implementation PNDAAssignmentsViewModel
+@implementation PNDATodoViewModel
 @synthesize collectionController;
-
 
 - (id)init
 {
@@ -30,21 +25,17 @@
 {
     __block BOOL hasResetTheCollectionControllerOnce = NO;
     
-    RACSignal *viewModelsSignal = [[[CKIClient currentClient] fetchAssignmentsForCourse:[CKICourse modelWithID:@"25951"]] map:^id(NSArray *assignments) {
+    RACSignal *viewModelsSignal = [[[CKIClient currentClient] fetchTodoItemsForCurrentUser] map:^id(NSArray *todoItems) {
         
         if (!hasResetTheCollectionControllerOnce) {
             [self.collectionController removeAllObjectsAndGroups];
             hasResetTheCollectionControllerOnce = YES;
         }
         
-        NSArray *viewModels = [[assignments.rac_sequence map:^id(CKIAssignment *assignment) {
-            static NSDateFormatter *dateFormatter;
-            static dispatch_once_t onceToken;
-            dispatch_once(&onceToken, ^{
-                dateFormatter = [NSDateFormatter new];
-                dateFormatter.dateStyle = NSDateFormatterMediumStyle;
-            });
-            return [PNDACellViewModel viewModelWithTitle:assignment.name subtitle:[dateFormatter stringFromDate:assignment.dueAt]];
+        NSArray *viewModels = [[[todoItems.rac_sequence filter:^BOOL(CKITodoItem *todoItem) {
+            return [[todoItem.assignment.name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] > 0;
+        }] map:^id(CKITodoItem *todoItem) {
+            return [PNDACellViewModel viewModelWithTitle:todoItem.assignment.name subtitle:todoItem.contextType];
         }] array];
         
         return viewModels;
@@ -59,5 +50,6 @@
     
     return viewModelsSignal;
 }
+
 
 @end

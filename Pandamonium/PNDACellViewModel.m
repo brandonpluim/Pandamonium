@@ -10,7 +10,7 @@
 #import "PNDACell.h"
 #import <MyLittleViewController/MyLittleViewController.h>
 
-@interface PNDACellViewModel () <MLVCCollectionViewCellViewModel>
+@interface PNDACellViewModel () <MLVCCollectionViewCellViewModel, MLVCTableViewCellViewModel>
 @end
 
 @implementation PNDACellViewModel
@@ -22,6 +22,7 @@
     return cellVM;
 }
 
+#pragma mark - collection view
 
 - (UICollectionViewCell *)collectionViewController:(MLVCCollectionViewController *)controller cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -33,6 +34,17 @@
 - (void)collectionViewController:(MLVCCollectionViewController *)controller didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // do nothing
+}
+
+
+#pragma mark - table view
+
+- (UITableViewCell *)tableViewController:(MLVCTableViewController *)controller cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [controller.tableView dequeueReusableCellWithIdentifier:@"PNDACell"];
+    cell.textLabel.text = self.title;
+    cell.detailTextLabel.text = self.subtitle;
+    return cell;
 }
 
 @end

@@ -21,6 +21,12 @@
 {
     RAC(self, titleLabel.text) = RACObserve(self, viewModel.title);
     RAC(self, subtitleLabel.text) = RACObserve(self, viewModel.subtitle);
+    
+    CALayer *border = [CALayer layer];
+    border.borderWidth = 1.f/ [UIScreen mainScreen].scale;
+    border.borderColor = [UIColor colorWithWhite:0.8 alpha:1].CGColor;
+    border.frame = CGRectInset(self.bounds, 0, 0);
+    [self.layer insertSublayer:border atIndex:0];
 }
 
 @end

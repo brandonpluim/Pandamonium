@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib
 {
-    self.itemSize = CGSizeMake(216, 218);
+    self.itemSize = CGSizeMake(216, 216);
     self.minimumInteritemSpacing = 20;
     self.minimumLineSpacing = 20;
     self.sectionInset = UIEdgeInsetsMake(100, 156, 100, 156);

@@ -19,7 +19,6 @@
 		494AD605189826B0009A7636 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494AD5E7189826B0009A7636 /* UIKit.framework */; };
 		494AD60D189826B0009A7636 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 494AD60B189826B0009A7636 /* InfoPlist.strings */; };
 		494AD60F189826B0009A7636 /* PandamoniumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD60E189826B0009A7636 /* PandamoniumTests.m */; };
-		494AD61C18982883009A7636 /* PNDAPandamonium-iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494AD61B18982883009A7636 /* PNDAPandamonium-iPhone.storyboard */; };
 		494AD61F18982AA9009A7636 /* PNDACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD61E18982AA9009A7636 /* PNDACell.m */; };
 		494AD62218982B62009A7636 /* PNDACellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD62118982B62009A7636 /* PNDACellViewModel.m */; };
 		494AD62518982C90009A7636 /* PNDAAssignmentsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD62418982C90009A7636 /* PNDAAssignmentsViewModel.m */; };
@@ -27,6 +26,11 @@
 		494AD62A18983BC5009A7636 /* PNDAPandamonium.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494AD62918983BC5009A7636 /* PNDAPandamonium.storyboard */; };
 		494AD62F18983E97009A7636 /* PNDAFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD62E18983E97009A7636 /* PNDAFlowLayout.m */; };
 		494AD63118984343009A7636 /* accesstoken.tkn in Resources */ = {isa = PBXBuildFile; fileRef = 494AD63018984343009A7636 /* accesstoken.tkn */; };
+		494AD634189846F9009A7636 /* PNDANotificationsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD633189846F9009A7636 /* PNDANotificationsViewModel.m */; };
+		494AD637189849A2009A7636 /* PNDATodoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD636189849A2009A7636 /* PNDATodoViewModel.m */; };
+		494AD63A1898594F009A7636 /* FanCardCollectionLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD6391898594F009A7636 /* FanCardCollectionLayoutHelper.m */; };
+		494AD63D18985980009A7636 /* CardCollectionLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD63C18985980009A7636 /* CardCollectionLayoutHelper.m */; };
+		494AD641189859FE009A7636 /* PNDACardFanLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AD640189859FE009A7636 /* PNDACardFanLayout.m */; };
 		D08CB1C0D41E4841B7D98A87 /* libPods-Pandamonium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3484E2C3A3E04C81972C67DE /* libPods-Pandamonium.a */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +63,6 @@
 		494AD60A189826B0009A7636 /* PandamoniumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PandamoniumTests-Info.plist"; sourceTree = "<group>"; };
 		494AD60C189826B0009A7636 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		494AD60E189826B0009A7636 /* PandamoniumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandamoniumTests.m; sourceTree = "<group>"; };
-		494AD61B18982883009A7636 /* PNDAPandamonium-iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "PNDAPandamonium-iPhone.storyboard"; sourceTree = "<group>"; };
 		494AD61D18982AA9009A7636 /* PNDACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDACell.h; sourceTree = "<group>"; };
 		494AD61E18982AA9009A7636 /* PNDACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNDACell.m; sourceTree = "<group>"; };
 		494AD62018982B62009A7636 /* PNDACellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDACellViewModel.h; sourceTree = "<group>"; };
@@ -72,6 +75,16 @@
 		494AD62D18983E97009A7636 /* PNDAFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDAFlowLayout.h; sourceTree = "<group>"; };
 		494AD62E18983E97009A7636 /* PNDAFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNDAFlowLayout.m; sourceTree = "<group>"; };
 		494AD63018984343009A7636 /* accesstoken.tkn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = accesstoken.tkn; sourceTree = "<group>"; };
+		494AD632189846F9009A7636 /* PNDANotificationsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDANotificationsViewModel.h; sourceTree = "<group>"; };
+		494AD633189846F9009A7636 /* PNDANotificationsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNDANotificationsViewModel.m; sourceTree = "<group>"; };
+		494AD635189849A2009A7636 /* PNDATodoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDATodoViewModel.h; sourceTree = "<group>"; };
+		494AD636189849A2009A7636 /* PNDATodoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNDATodoViewModel.m; sourceTree = "<group>"; };
+		494AD6381898594F009A7636 /* FanCardCollectionLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FanCardCollectionLayoutHelper.h; sourceTree = "<group>"; };
+		494AD6391898594F009A7636 /* FanCardCollectionLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanCardCollectionLayoutHelper.m; sourceTree = "<group>"; };
+		494AD63B18985980009A7636 /* CardCollectionLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionLayoutHelper.h; sourceTree = "<group>"; };
+		494AD63C18985980009A7636 /* CardCollectionLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionLayoutHelper.m; sourceTree = "<group>"; };
+		494AD63F189859FE009A7636 /* PNDACardFanLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDACardFanLayout.h; sourceTree = "<group>"; };
+		494AD640189859FE009A7636 /* PNDACardFanLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNDACardFanLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +155,6 @@
 				494AD62718982FA4009A7636 /* CKIClient+PNDAClient.m */,
 				494AD61D18982AA9009A7636 /* PNDACell.h */,
 				494AD61E18982AA9009A7636 /* PNDACell.m */,
-				494AD61B18982883009A7636 /* PNDAPandamonium-iPhone.storyboard */,
 				494AD62918983BC5009A7636 /* PNDAPandamonium.storyboard */,
 				494AD5FB189826B0009A7636 /* Images.xcassets */,
 				494AD5EA189826B0009A7636 /* Supporting Files */,
@@ -187,6 +199,10 @@
 				494AD62118982B62009A7636 /* PNDACellViewModel.m */,
 				494AD62318982C90009A7636 /* PNDAAssignmentsViewModel.h */,
 				494AD62418982C90009A7636 /* PNDAAssignmentsViewModel.m */,
+				494AD632189846F9009A7636 /* PNDANotificationsViewModel.h */,
+				494AD633189846F9009A7636 /* PNDANotificationsViewModel.m */,
+				494AD635189849A2009A7636 /* PNDATodoViewModel.h */,
+				494AD636189849A2009A7636 /* PNDATodoViewModel.m */,
 			);
 			name = "View Model";
 			sourceTree = "<group>";
@@ -194,10 +210,24 @@
 		494AD62C18983E39009A7636 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				494AD63E18985984009A7636 /* From cards */,
 				494AD62D18983E97009A7636 /* PNDAFlowLayout.h */,
 				494AD62E18983E97009A7636 /* PNDAFlowLayout.m */,
+				494AD63F189859FE009A7636 /* PNDACardFanLayout.h */,
+				494AD640189859FE009A7636 /* PNDACardFanLayout.m */,
 			);
 			name = Layout;
+			sourceTree = "<group>";
+		};
+		494AD63E18985984009A7636 /* From cards */ = {
+			isa = PBXGroup;
+			children = (
+				494AD63B18985980009A7636 /* CardCollectionLayoutHelper.h */,
+				494AD63C18985980009A7636 /* CardCollectionLayoutHelper.m */,
+				494AD6381898594F009A7636 /* FanCardCollectionLayoutHelper.h */,
+				494AD6391898594F009A7636 /* FanCardCollectionLayoutHelper.m */,
+			);
+			name = "From cards";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +312,6 @@
 				494AD63118984343009A7636 /* accesstoken.tkn in Resources */,
 				494AD5FC189826B0009A7636 /* Images.xcassets in Resources */,
 				494AD62A18983BC5009A7636 /* PNDAPandamonium.storyboard in Resources */,
-				494AD61C18982883009A7636 /* PNDAPandamonium-iPhone.storyboard in Resources */,
 				494AD5EE189826B0009A7636 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,13 +364,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494AD634189846F9009A7636 /* PNDANotificationsViewModel.m in Sources */,
+				494AD63D18985980009A7636 /* CardCollectionLayoutHelper.m in Sources */,
+				494AD641189859FE009A7636 /* PNDACardFanLayout.m in Sources */,
 				494AD5F0189826B0009A7636 /* main.m in Sources */,
 				494AD62218982B62009A7636 /* PNDACellViewModel.m in Sources */,
 				494AD62818982FA4009A7636 /* CKIClient+PNDAClient.m in Sources */,
 				494AD62F18983E97009A7636 /* PNDAFlowLayout.m in Sources */,
 				494AD5F4189826B0009A7636 /* PNDAAppDelegate.m in Sources */,
 				494AD61F18982AA9009A7636 /* PNDACell.m in Sources */,
+				494AD63A1898594F009A7636 /* FanCardCollectionLayoutHelper.m in Sources */,
 				494AD62518982C90009A7636 /* PNDAAssignmentsViewModel.m in Sources */,
+				494AD637189849A2009A7636 /* PNDATodoViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

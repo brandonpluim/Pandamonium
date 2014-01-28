@@ -1,5 +1,5 @@
 //
-//  PNDAViewController.h
+//  PNDACell.h
 //  Pandamonium
 //
 //  Created by derrick on 1/28/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PNDAViewController : UIViewController
+@class PNDACellViewModel;
 
+@interface PNDACell : UICollectionViewCell
+@property (nonatomic) PNDACellViewModel *viewModel;
 @end

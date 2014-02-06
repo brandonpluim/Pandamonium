@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *subtitleLabel;
 @end
 
+typedef double Double;
+
 @implementation PNDACell
 
 - (void)awakeFromNib

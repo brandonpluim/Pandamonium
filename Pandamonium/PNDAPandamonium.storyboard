@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <collectionViewLayout key="collectionViewLayout" id="GCz-AX-b25" customClass="PNDAFlowLayout"/>
+                        <collectionViewLayout key="collectionViewLayout" id="GCz-AX-b25" customClass="PNDACardFanLayout"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PNDACell" id="3cv-Pj-fKP" customClass="PNDACell">
                                 <rect key="frame" x="0.0" y="0.0" width="216" height="216"/>
@@ -71,11 +71,13 @@
                         </connections>
                     </collectionView>
                     <connections>
-                        <outlet property="viewModel" destination="cZs-Db-gCm" id="UNn-ax-3y2"/>
+                        <outlet property="viewModel" destination="cZs-Db-gCm" id="vBg-fk-pkP"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mX-90-hXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="cZs-Db-gCm" customClass="PNDAAssignmentsViewModel"/>
+                <customObject id="cZs-Db-gCm" customClass="PNDANotificationsViewModel"/>
+                <customObject id="BKK-ID-rAA" customClass="PNDAAssignmentsViewModel"/>
+                <customObject id="IIX-ac-A5R" customClass="PNDATodoViewModel"/>
             </objects>
             <point key="canvasLocation" x="120" y="2"/>
         </scene>
@@ -123,7 +125,9 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gj2-15-joh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="ubY-RL-MZI" customClass="PNDANotificationsViewModel"/>
                 <customObject id="O4C-dw-P6y" customClass="PNDAAssignmentsViewModel"/>
+                <customObject id="2pk-QL-48k" customClass="PNDATodoViewModel"/>
             </objects>
             <point key="canvasLocation" x="1090" y="2"/>
         </scene>
